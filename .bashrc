@@ -4,11 +4,23 @@
 alias sb="source ~/.bashrc"
 alias vib="vi ~/.bashrc"
 alias cab="cat ~/.bashrc"
+alias leb="less ~/.bashrc"
+alias upb="cd ~/work/dotfile | gce dev | cp -rf ~/.bashrc ~/work/dotfile/ | ga | gs | gco update | gpc | gpm | cd -"
 
 alias ll="ls -la"
 alias l="ll"
 
 alias hi="history"
+alias hig="hi | grep"
+
+# Clipbord
+#alias c="clip.exe"
+# win32yank.exe
+# https://github.com/equalsraf/win32yank/releases
+alias c="win32yank.exe -i"
+alias v="win32yank.exe -o"
+
+
 
 cdls ()
 {
@@ -43,6 +55,7 @@ alias grv="gh repo view"
 alias gpc="gh pr create -f"
 alias gpm="gh pr merge -m"
 alias gpv="gh pr view"
+alias gpw="gh pr view -w"
 
 # wsl login auto run script
 #cdw
