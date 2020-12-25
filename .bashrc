@@ -12,7 +12,7 @@ upbb (){
 	cp -rf ~/.bashrc ~/work/dotfile/
 	ga
 	gs
-	gco update
+	gco "fix: update"
 	gpc
 	gpm
 	cd -
