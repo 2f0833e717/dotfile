@@ -16,9 +16,7 @@ cdls ()
 }
 alias cd="cdls"
 
-alias ..="cd .."
-alias .=".."
-alias a=".."
+alias a="cd .."
 
 alias cdw="cd ~/work"
 alias cdh="cd /mnt/c/Users/user"
@@ -28,16 +26,24 @@ alias nr="npm run "
 alias qq="exit"
 
 # Custom Git alias settings
-alias ghrc="gh repo create"
 alias gpl="git pull"
 alias gb="git branch"
 alias gba="gb -a"
 alias gce="git checkout"
-alias gp="git push -u origin"
+alias gs="git status"
+alias ga="git add ."
+alias gco="git commit -m"
+alias gpu="git push -u origin"
 alias gl="git log --oneline --graph"
+alias glo="git log --oneline --graph"
 
-
+# Custom Github cli alias settings
+alias grc="gh repo crete"
+alias grv="gh repo view"
+alias gpc="gh pr create -f"
+alias gpm="gh pr merge -m"
+alias gpv="gh pr view"
 
 # wsl login auto run script
-cdw
+#cdw
 
