@@ -14,7 +14,7 @@ upbb (){
 	ga
 	gs
 	gco update
-	gh pr create -B master
+	gh pr create
 	gpm
 	cd -
 }
