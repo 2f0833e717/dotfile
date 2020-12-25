@@ -5,7 +5,19 @@ alias sb="source ~/.bashrc"
 alias vib="vi ~/.bashrc"
 alias cab="cat ~/.bashrc"
 alias leb="less ~/.bashrc"
-alias upb="cd ~/work/dotfile | gce dev | cp -rf ~/.bashrc ~/work/dotfile/ | ga | gs | gco update | gpc | gpm | cd -"
+#alias upb="cd ~/work/dotfile | gce dev | cp -rf ~/.bashrc ~/work/dotfile/ | ga | gs | gco update | gpc | gpm | cd -"
+
+upbb (){
+	cd ~/work/dotfile
+	gce dev
+	cp -rf ~/.bashrc ~/work/dotfile/
+	ga
+	gs
+	gco update
+	gpc
+	gpm
+	cd -
+}
 
 alias ll="ls -la"
 alias l="ll"
@@ -19,8 +31,6 @@ alias hig="hi | grep"
 # https://github.com/equalsraf/win32yank/releases
 alias c="win32yank.exe -i"
 alias v="win32yank.exe -o"
-
-
 
 cdls ()
 {
