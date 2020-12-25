@@ -5,8 +5,7 @@ alias sb="source ~/.bashrc"
 alias vib="vi ~/.bashrc"
 alias cab="cat ~/.bashrc"
 alias leb="less ~/.bashrc"
-#alias upb="cd ~/work/dotfile | gce dev | cp -rf ~/.bashrc ~/work/dotfile/ | ga | gs | gco update | gpc | gpm | cd -"
-
+alias upb="upbb"
 upbb (){
 	cd ~/work/dotfile
 	gce dev
@@ -56,17 +55,24 @@ alias gs="git status"
 alias ga="git add ."
 alias gco="git commit -m"
 alias gpu="git push -u origin"
-alias gl="git log --oneline --graph"
-alias glo="git log --oneline --graph"
+alias glo="git log --oneline --graph --all"
+alias gl="glo"
+alias gd="git diff"
 
 # Custom Github cli alias settings
 alias grc="gh repo crete"
 alias grv="gh repo view"
+alias gv="grv"
 alias gpc="gh pr create -f"
 alias gpm="gh pr merge -m"
 alias gpv="gh pr view"
 alias gpw="gh pr view -w"
+gpa ()
+{
+	gb -a | ga | gs | gco $1 | gd | gpc | gpm | gl
+}
 
-# wsl login auto run script
+
+#wsl login auto run script
 #cdw
 
