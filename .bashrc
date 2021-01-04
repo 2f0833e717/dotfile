@@ -17,7 +17,7 @@ upbb (){
 	gpm
 	cd -
 }
-alias cpb="cp -rf ~/work/dotfile/.bashrc ~/"
+alias cpb="cp -rf ~/work/dotfile/.bashrc ~/ | sb"
 
 alias ll="ls -la"
 alias l="ll"
