@@ -52,13 +52,17 @@ alias gpl="git pull"
 alias gb="git branch"
 alias gba="gb -a"
 alias gce="git checkout"
-alias gs="git status"
-alias ga="git add ."
+alias gst="git status"
+alias gs="gst"
+alias gad="git add ."
+alias ga="gad"
 alias gco="git commit -m"
+alias gcoauto="git commit -m fix:update"
 alias gpu="git push -u origin"
 alias glo="git log --oneline --graph --all"
 alias gl="glo"
-alias gd="git diff"
+alias gdi="git diff"
+alias gd="gdi"
 
 # Custom Github cli alias settings
 alias grc="gh repo crete"
@@ -70,11 +74,18 @@ alias gpc="gh pr create -f"
 alias gpm="gh pr merge -m"
 alias gpv="gh pr view"
 alias gpw="gh pr view -w"
+gpai ()
+{
+	gb -a | gad | gst | gco $1 | gpu $2 | gdi | gpc | gpm | glo
+}
 gpa ()
 {
-	gb -a | ga | gs | gco $1 | gd | gpc | gpm | gl
+	gad | gcoauto | gpu
 }
-
+gma ()
+{
+	gpc | gpm
+}
 
 #wsl login auto run script
 #cdw
