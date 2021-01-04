@@ -5,7 +5,6 @@ alias sb="source ~/.bashrc"
 alias vib="vi ~/.bashrc"
 alias cab="cat ~/.bashrc"
 alias leb="less ~/.bashrc"
-alias upb="upbb"
 upbb (){
 	cd ~/work/dotfile
 	gce dev
@@ -16,7 +15,9 @@ upbb (){
 	gpc
 	gpm
 	cd -
+	cpb
 }
+alias upb="upbb"
 alias cpb="cp -rf ~/work/dotfile/.bashrc ~/ | sb"
 
 alias ll="ls -la"
