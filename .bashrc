@@ -4,6 +4,8 @@
 alias sb="source ~/.bashrc"
 alias vib="vi ~/.bashrc"
 alias cab="cat ~/.bashrc"
+alias cb="cab"
+alias ca="cab"
 alias leb="less ~/.bashrc"
 upbb (){
 	cd ~/work/dotfile
@@ -49,7 +51,7 @@ alias nr="npm run "
 alias qq="exit"
 
 # Custom Git alias settings
-alias gpl="git pull"
+alias gpl="git pull origin master"
 alias gb="git branch"
 alias gba="gb -a"
 alias gce="git checkout"
@@ -59,8 +61,11 @@ alias gad="git add ."
 alias ga="gad"
 alias gco="git commit -m"
 alias gcoauto="git commit -m fix:update"
+alias gcoa="gcoauto"
 alias gpu="git push -u origin"
-alias glo="git log --oneline --graph --all"
+alias gpum="git push -u origin master"
+alias gpud="git push -u origin dev"
+alias glo="git log --oneline --graph"
 alias gl="glo"
 alias gdi="git diff"
 alias gd="gdi"
@@ -74,19 +79,17 @@ alias gvw="grvw"
 alias gpc="gh pr create -f"
 alias gpm="gh pr merge -m"
 alias gpv="gh pr view"
-alias gpw="gh pr view -w"
+alias gpvw="gh pr view -w"
+alias gpv="gpvw"
 gpai ()
 {
 	gb -a | gad | gst | gco $1 | gpu $2 | gdi | gpc | gpm | glo
 }
 gpa ()
 {
-	gad | gcoauto | gpu
+	gad|gcoa|gpud|gpc|gpm
 }
-gma ()
-{
-	gpc | gpm
-}
+
 
 #wsl login auto run script
 #cdw
