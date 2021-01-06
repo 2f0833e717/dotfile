@@ -25,7 +25,7 @@ upbb (){
 	cpb
 }
 alias upb="upbb"
-alias cpb="cp -rf ~/work/dotfile/.bashrc ~/ && sb"
+alias cpb="rsync -a ~/work/dotfile/ ~/ && sb"
 
 alias ll="ls -la"
 alias l="ll"
