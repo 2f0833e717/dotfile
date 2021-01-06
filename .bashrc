@@ -25,7 +25,7 @@ upbb (){
 	cpb
 }
 alias upb="upbb"
-alias cpb="cp -rf ~/work/dotfile/.bashrc ~/ | sb"
+alias cpb="cp -rf ~/work/dotfile/.bashrc ~/ && sb"
 
 alias ll="ls -la"
 alias l="ll"
@@ -84,13 +84,12 @@ alias gvw="grvw"
 alias gpc="gh pr create -f"
 alias gpm="gh pr merge -m"
 alias gpv="gh pr view"
+alias gplc="gh pr list -s closed -L 16"
 alias gpvw="gh pr view -w"
 alias gpv="gpvw"
 
-gpai(){
-	gba|gad|gst|gco $1|gpu|gdi|gpc|gpm|glo
-}
-alias gpada="gpl && gba && gst && gad && gcoa && gpu && gpc && gpm && gpl && glo && grvw"
+
+alias gpada="gpl && gba && gst && gad && gcoa && gpu && gpc && gpm && gpl && glo && gplc && grvw"
 alias gpad="gpl && gad && gcoa && gpc && gpm"
 
 #wsl login auto run script
