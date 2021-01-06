@@ -16,9 +16,10 @@ upbb (){
 	cd ~/work/dotfile
 	gpl
 	gce dev
-	cp -rf ~/.bashrc ~/work/dotfile/
+	rsync -a ~/.bashrc ~/work/dotfile/
 	rsync -a ~/.vim ~/work/dotfile/
 	rsync -a ~/.vimrc ~/work/dotfile/
+	rsync -a ~/.gitconfig ~/work/dotfile/
 	gad
 	gst
 	gcoauto
@@ -27,7 +28,6 @@ upbb (){
 	cd -
 	cpb
 }
-
 alias upb="upbb"
 alias cpb="cp -rf ~/work/dotfile/.bashrc ~/ | sb"
 
