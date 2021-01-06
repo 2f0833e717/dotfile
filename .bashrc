@@ -25,6 +25,7 @@ upbb (){
 	gcoauto
 	gpc
 	gpm
+	glo
 	cd -
 	cpb
 }
@@ -94,7 +95,8 @@ alias gpv="gpvw"
 gpai(){
 	gba|gad|gst|gco $1|gpu|gdi|gpc|gpm|glo
 }
-alias gpad="gad|gcoa|gpud|gpc|gpm"
+alias gpadp="gad|gcoa|gpud|gpc|gpm"
+alias gpad="gad|gcoa|gpc|gpm"
 
 
 #wsl login auto run script
