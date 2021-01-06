@@ -14,7 +14,7 @@ alias cc="cab"
 alias leb="less ~/.bashrc"
 upbb (){
 	cd ~/work/dotfile
-	gpll
+	gpl
 	gce dev
 	cp -rf ~/.bashrc ~/work/dotfile/
 	rsync -a ~/.vim ~/work/dotfile/
@@ -26,11 +26,6 @@ upbb (){
 	gpm
 	cd -
 	cpb
-}
-
-gpll ()
-{
-	git pull origin master
 }
 
 alias upb="upbb"
