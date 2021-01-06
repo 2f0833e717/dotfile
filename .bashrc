@@ -1,24 +1,38 @@
 # ~/.bashrc 
 
+# Custom Bash color setting
+
+
+
 # Custom Bash alias settings
 alias sb="source ~/.bashrc"
 alias vib="vi ~/.bashrc"
 alias cab="cat ~/.bashrc"
 alias cb="cab"
 alias ca="cab"
+alias cc="cab"
 alias leb="less ~/.bashrc"
 upbb (){
 	cd ~/work/dotfile
+	gpll
 	gce dev
 	cp -rf ~/.bashrc ~/work/dotfile/
-	ga
-	gs
-	gco "fix: update"
+	rsync -a ~/.vim ~/work/dotfile/
+	rsync -a ~/.vimrc ~/work/dotfile/
+	gad
+	gst
+	gcoauto
 	gpc
 	gpm
 	cd -
 	cpb
 }
+
+gpll ()
+{
+	git pull origin master
+}
+
 alias upb="upbb"
 alias cpb="cp -rf ~/work/dotfile/.bashrc ~/ | sb"
 
@@ -62,10 +76,10 @@ alias ga="gad"
 alias gco="git commit -m"
 alias gcoauto="git commit -m fix:update"
 alias gcoa="gcoauto"
-alias gpu="git push -u origin"
+alias gpu="git push -u"
 alias gpum="git push -u origin master"
 alias gpud="git push -u origin dev"
-alias glo="git log --oneline --graph"
+alias glo="git log --oneline --graph -n 12"
 alias gl="glo"
 alias gdi="git diff"
 alias gd="gdi"
@@ -81,14 +95,11 @@ alias gpm="gh pr merge -m"
 alias gpv="gh pr view"
 alias gpvw="gh pr view -w"
 alias gpv="gpvw"
-gpai ()
-{
-	gb -a | gad | gst | gco $1 | gpu $2 | gdi | gpc | gpm | glo
+
+gpai(){
+	gba|gad|gst|gco $1|gpu|gdi|gpc|gpm|glo
 }
-gpa ()
-{
-	gad|gcoa|gpud|gpc|gpm
-}
+alias gpad="gad|gcoa|gpud|gpc|gpm"
 
 
 #wsl login auto run script
