@@ -20,12 +20,7 @@ upbb (){
 	rsync -a ~/.vim ~/work/dotfile/
 	rsync -a ~/.vimrc ~/work/dotfile/
 	rsync -a ~/.gitconfig ~/work/dotfile/
-	gad
-	gst
-	gcoauto
-	gpc
-	gpm
-	glo
+	gpada
 	cd -
 	cpb
 }
@@ -95,9 +90,8 @@ alias gpv="gpvw"
 gpai(){
 	gba|gad|gst|gco $1|gpu|gdi|gpc|gpm|glo
 }
-alias gpadp="gad|gcoa|gpud|gpc|gpm"
-alias gpad="gad|gcoa|gpc|gpm"
-
+alias gpada="gpl && gba && gst && gad && gcoa && gpu && gpc && gpm && gpl && glo && grvw"
+alias gpad="gpl && gad && gcoa && gpc && gpm"
 
 #wsl login auto run script
 #cdw
