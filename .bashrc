@@ -12,6 +12,8 @@ alias cb="cab"
 alias ca="cab"
 alias cc="cab"
 alias leb="less ~/.bashrc"
+
+# My dotfile upload to Git
 upbb (){
 	cd ~/work/dotfile
 	gpl
@@ -25,7 +27,8 @@ upbb (){
 	cpb
 }
 alias upb="upbb"
-alias cpb="rsync -a ~/work/dotfile/ ~/ && sb"
+# My dotfile import to Git
+alias cpb="cp -rf ~/work/dotfile/.bashrc ~/ && sb"
 
 alias ll="ls -la"
 alias l="ll"
@@ -39,6 +42,13 @@ alias hig="hi | grep"
 # https://github.com/equalsraf/win32yank/releases
 alias c="win32yank.exe -i"
 alias v="win32yank.exe -o"
+
+# wsl in browser html
+export BROWSER="explorer.exe"
+alias start="explorer.exe"
+alias web="explorer.exe"
+alias html="explorer.exe"
+
 
 cdls ()
 {
@@ -88,7 +98,7 @@ alias gplc="gh pr list -s closed -L 16"
 alias gpvw="gh pr view -w"
 alias gpv="gpvw"
 
-
+ 
 alias gpada="gpl && gba && gst && gad && gcoa && gpu && gpc && gpm && gpl && glo && gplc && grvw"
 alias gpad="gpl && gad && gcoa && gpc && gpm"
 
