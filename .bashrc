@@ -135,24 +135,15 @@ alias leb="less ~/.bashrc"
 # My dotfile upload to Git
 upbb (){
 	cd ~/work/dotfile
-
-	# home to dotpj
-	echo "======== running ======== cob()"
 	cob
-
-	# deploy all
-	echo "======== running ======== gpada()"
 	gpada
-
-	# dotpj to home
-	echo "======== running ======== cpb()"
 	cpb
-
 	cd -
 }
 alias upb="upbb"
 # copy home path dotfile to dotfile project
 cob (){
+	echo "======== running ======== cob()"
 	rsync -a ~/.bashrc ~/work/dotfile/
 	rsync -a ~/.bash_profile ~/work/dotfile/
 	rsync -a ~/.gitconfig ~/work/dotfile/
@@ -162,6 +153,7 @@ cob (){
 }
 # copy dotfile project to home path dotfile and reloading
 alias cpb="cp -rf ~/work/dotfile/.bashrc ~/ && sb"
+	echo "======== running ======== cpb()"
 
 alias ll="ls -la"
 alias l="ll"
@@ -232,8 +224,33 @@ alias gplc="gh pr list -s closed -L 16"
 alias gpvw="gh pr view -w"
 alias gpv="gpvw"
 
-alias gpada="gced && gpl && gba && gst && gad && gcoa && gpud && gpc && gpm && gpl && glo && gplc && grvw"
-alias gpad="gced && gpl && gad && gcoa && gpud && gpc && gpm"
+gpada (){
+	echo "======== running ======== gpada()"
+	gced
+	gpl
+	gba
+	gst
+	gad
+	gcoa
+	gpud
+	gpc
+	gpm
+	gpl
+	glo
+	gplc
+	grvw
+}
+gpad (){
+	echo "======== running ======== gpad()"
+	gced
+	gpl
+	gad
+	gcoa
+	gpud
+	gpc
+	gpm
+	gpl
+}
 
 #wsl login auto run script
 #cdw
