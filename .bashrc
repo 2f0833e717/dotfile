@@ -232,7 +232,6 @@ alias gpv="gh pr view"
 alias gplc="gh pr list -s closed -L 16"
 alias gpvw="gh pr view -w"
 alias gpv="gpvw"
-
  
 alias gpada="gpl && gba && gst && gad && gcoa && gpu && gpc && gpm && gpl && glo && gplc && grvw"
 alias gpad="gpl && gad && gcoa && gpc && gpm"
