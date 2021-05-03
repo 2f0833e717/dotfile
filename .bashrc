@@ -135,8 +135,6 @@ alias leb="less ~/.bashrc"
 # My dotfile upload to Git
 upbb (){
 	cd ~/work/dotfile
-	gpl
-	gce dev
 
 	# home to dotpj
 	echo "======== running ======== cob()"
@@ -205,6 +203,7 @@ alias gpl="git pull origin master"
 alias gb="git branch"
 alias gba="gb -a"
 alias gce="git checkout"
+alias gced="git checkout dev"
 alias gst="git status"
 alias gs="gst"
 alias gad="git add ."
@@ -232,9 +231,9 @@ alias gpv="gh pr view"
 alias gplc="gh pr list -s closed -L 16"
 alias gpvw="gh pr view -w"
 alias gpv="gpvw"
- 
-alias gpada="gpl && gba && gst && gad && gcoa && gpu && gpc && gpm && gpl && glo && gplc && grvw"
-alias gpad="gpl && gad && gcoa && gpc && gpm"
+
+alias gpada="gced && gpl && gba && gst && gad && gcoa && gpud && gpc && gpm && gpl && glo && gplc && grvw"
+alias gpad="gced && gpl && gad && gcoa && gpud && gpc && gpm"
 
 #wsl login auto run script
 #cdw
