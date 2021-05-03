@@ -139,15 +139,15 @@ upbb (){
 	gce dev
 
 	# home to dotpj
-	echo "running cob()"
+	echo "======== running ======== cob()"
 	cob
 
 	# deploy all
-	echo "running gpada()"
+	echo "======== running ======== gpada()"
 	gpada
 
 	# dotpj to home
-	echo "running cpb()"
+	echo "======== running ======== cpb()"
 	cpb
 
 	cd -
