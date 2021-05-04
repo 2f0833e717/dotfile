@@ -126,6 +126,10 @@ fi
 #wsl login auto run script
 cdw
 
+# nvm loading
 if [ -s ~/.nvm/nvm.sh ]; then
 	source ~/.nvm/nvm.sh
 fi
+
+# brew loading
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
