@@ -25,26 +25,30 @@ alias hig="hi | grep"
 
 alias qq="exit"
 
+# Custom bashscript alias settings
+echoo(){
+	echo "======== running ========"
+}
+
 # My dotfile upload to Git
-upbb (){
+alias upbb="
 	cd ~/work/dotfile
 	cob
 	gpada
 	cpb
-	cd -
-}
+	cd -"
 alias upb="upbb"
 
 # copy home path dotfile to dotfile project
 alias cob="
 	echoo && alias cob && echoo
-	rsync -a ~/.bash_aliases ~/work/dotfile/
-	rsync -a ~/.bash_profile ~/work/dotfile/
-	rsync -a ~/.bashrc ~/work/dotfile/
-	rsync -a ~/.gitconfig ~/work/dotfile/
-	rsync -a ~/.profile ~/work/dotfile/
-	rsync -a ~/.vim ~/work/dotfile/
-	rsync -a ~/.vimrc ~/work/dotfile/"
+	cp -rf ~/.bash_aliases ~/work/dotfile/
+	cp -rf ~/.bash_profile ~/work/dotfile/
+	cp -rf ~/.bashrc ~/work/dotfile/
+	cp -rf ~/.gitconfig ~/work/dotfile/
+	cp -rf ~/.profile ~/work/dotfile/
+	cp -rf ~/.vim ~/work/dotfile/
+	cp -rf ~/.vimrc ~/work/dotfile/"
 
 # copy dotfile project to home path dotfile and reloading
 alias cpb="
@@ -70,11 +74,6 @@ alias view="explorer.exe"
 
 # Custom npm alias settings
 alias nr="npm run"
-
-# Custom bashscript alias settings
-echoo(){
-	echo "======== running ========"
-}
 
 # Custom Git alias settings
 alias gpl="git pull origin master"
@@ -130,8 +129,7 @@ alias gpada="
 	gplc
 	grvw"
 
-gpad (){
-	echo "======== running ======== gpad()"
+alias gpad="
 	gced
 	gpl
 	gad
@@ -139,5 +137,4 @@ gpad (){
 	gpud
 	gpc
 	gpm
-	gpl
-}
+	gpl"
