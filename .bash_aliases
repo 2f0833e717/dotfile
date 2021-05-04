@@ -33,15 +33,14 @@ echoo(){
 # My dotfile upload to Git
 alias upbb="
 	cd ~/work/dotfile
-	cob
+	coba
 	gpada
-	cpb
+	cpba
 	cd -"
 alias upb="upbb"
 
 # copy home path dotfile to dotfile project
 alias cob="
-	echoo && alias cob && echoo
 	cp -rf ~/.bash_aliases ~/work/dotfile/
 	cp -rf ~/.bash_profile ~/work/dotfile/
 	cp -rf ~/.bashrc ~/work/dotfile/
@@ -52,7 +51,6 @@ alias cob="
 
 # copy dotfile project to home path dotfile and reloading
 alias cpb="
-	echoo && alias cpb && echoo
 	cp -rf ~/work/dotfile/.bash_aliases ~/
 	cp -rf ~/work/dotfile/.bash_profile ~/
 	cp -rf ~/work/dotfile/.bashrc ~/
@@ -108,42 +106,21 @@ alias gplc="gh pr list -s closed -L 16"
 alias gpvw="gh pr view -w"
 alias gpv="gpvw"
 
-alias gceda="
-	echoo && alias gced && echoo
-	git checkout dev"
-alias gpla="
-	echoo && alias gpl && echoo
-	git pull origin master"
-alias gbaa="
-	echoo && alias gba && echoo
-	git branch -a"
-alias gsta="
-	echoo && alias gst && echoo
-	git status"
-alias gada="
-	echoo && alias gad && echoo
-	git add ."
-alias gcoaa="
-	echoo && alias gcoa && echoo
-	git commit -m fix:update"
-alias gpuda="
-	echoo && alias gpud && echoo
-	git push -u origin dev"
-alias gpca="
-	echoo && alias gpc && echoo
-	gh pr create -f"
-alias gpma="
-	echoo && alias gpm && echoo
-	gh pr merge -m"
-alias gloa="
-	echoo && alias gloa && echoo
-	git log --oneline --graph -n 12"
-alias gplca="
-	echoo && alias gplc && echoo
-	gh pr list -s closed -L 16"
-alias grvwa="
-	echoo && alias grvw && echoo
-	gh repo view --web"
+# Custom bash deploy echo alias settings
+alias gceda="echoo && alias gced && echoo && gced"
+alias gpla="echoo && alias gpl && echoo && gpl"
+alias gbaa="echoo && alias gba && echoo && gba"
+alias gsta="echoo && alias gst && echoo && gst"
+alias gada="echoo && alias gad && echoo && gad"
+alias gcoaa="echoo && alias gcoa && echoo && gcoa"
+alias gpuda="echoo && alias gpud && echoo && gpud"
+alias gpca="echoo && alias gpc && echoo && gpc"
+alias gpma="echoo && alias gpm && echoo && gpm"
+alias gloa="echoo && alias gloa && echoo && gloa"
+alias gplca="echoo && alias gplc && echoo && ggplc"
+alias grvwa="echoo && alias grvw && echoo && grvw"
+alias coba="echoo && alias cob && echoo && cob"
+alias cpba="echoo && alias cpb && echoo && cpb"
 
 alias gpada="
 	gceda
