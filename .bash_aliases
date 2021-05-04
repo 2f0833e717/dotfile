@@ -5,9 +5,10 @@ alias sb="source ~/.bashrc"
 alias vib="vi ~/.bash_aliases"
 alias cab="cat ~/.bash_aliases"
 alias cb="cab"
-alias ca="cab"
 alias cc="cab"
 alias leb="less ~/.bash_aliases"
+
+alias ca="code ."
 
 cdls ()
 {
