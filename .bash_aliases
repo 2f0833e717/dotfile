@@ -123,6 +123,7 @@ gpada (){
 	gplc
 	grvw
 }
+
 gpad (){
 	echo "======== running ======== gpad()"
 	gced
