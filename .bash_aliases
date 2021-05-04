@@ -27,7 +27,7 @@ alias qq="exit"
 
 # Custom bashscript alias settings
 echoo(){
-	echo "======== running ========"
+	echo "======== alias ========"
 }
 
 # My dotfile upload to Git
@@ -51,9 +51,7 @@ alias cob="
 
 # copy dotfile project to home path dotfile and reloading
 alias cpb="
-	cp -rf ~/work/dotfile/.bash_aliases ~/
-	cp -rf ~/work/dotfile/.bash_profile ~/
-	cp -rf ~/work/dotfile/.bashrc ~/
+	cp -rf ~/work/dotfile/* ~/
 	sb"
 
 # Clipbord
@@ -116,7 +114,7 @@ alias gcoaa="echoo && alias gcoa && gcoa"
 alias gpuda="echoo && alias gpud && gpud"
 alias gpca="echoo && alias gpc && gpc"
 alias gpma="echoo && alias gpm && gpm"
-alias gloa="echoo && alias gloa && gloa"
+alias gloa="echoo && alias glo && gloa"
 alias gplca="echoo && alias gplc && ggplc"
 alias grvwa="echoo && alias grvw && grvw"
 alias coba="echoo && alias cob && cob"
@@ -134,7 +132,7 @@ alias gpada="
 	gpma
 	gpla
 	gloa
-	gplc
+	gplca
 	grvwa"
 
 alias gpad="
