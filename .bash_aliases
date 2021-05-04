@@ -120,5 +120,6 @@ alias cpba="echoo && alias cpb && cpb"
 alias gpadaa="echoo && alias gpada && gpada"
 alias gpadna="echoo && alias gpadn && gpadn"
 
+# Custom bash deploy alias settings
 alias gpada="gceda && gpla && gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
 alias gpadn="gceda && gpla && gada && gcoaa && gpuda && gpca && gpma && gpla"
