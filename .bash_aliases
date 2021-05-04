@@ -102,6 +102,14 @@ alias gplc="gh pr list -s closed -L 16"
 alias gpvw="gh pr view -w"
 alias gpv="gpvw"
 
+# Custom Github api alias settings
+grvl(){
+	curl -f -s -L https://api.github.com/users/2f0833e717/repos | \
+	grep "clone_url" | \
+	sed -e "s/\"clone_url\"\:\s\"//" | \
+	sed -e "s/\"\,$//"
+}
+
 # Custom bash deploy echo alias settings
 alias gceda="echoo && alias gced && gced"
 alias gpla="echoo && alias gpl && gpl"
