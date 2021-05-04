@@ -28,27 +28,33 @@ alias qq="exit"
 # My dotfile upload to Git
 upbb (){
 	cd ~/work/dotfile
-	cob
+	cobb
 	gpada
-	cpb
+	cpbb
 	cd -
 }
 alias upb="upbb"
+
 # copy home path dotfile to dotfile project
-cob (){
+cobb (){
 	echo "======== running ======== cob()"
-	rsync -a ~/.bashrc ~/work/dotfile/
+	rsync -a ~/.bash_aliases ~/work/dotfile/
 	rsync -a ~/.bash_profile ~/work/dotfile/
+	rsync -a ~/.bashrc ~/work/dotfile/
 	rsync -a ~/.gitconfig ~/work/dotfile/
 	rsync -a ~/.profile ~/work/dotfile/
 	rsync -a ~/.vim ~/work/dotfile/
 	rsync -a ~/.vimrc ~/work/dotfile/
 }
+alias cob="cobb"
 # copy dotfile project to home path dotfile and reloading
-cpb (){
+cpbb (){
 	echo "======== running ======== cpb()"
+	cp -rf ~/work/dotfile/.bash_aliases ~/ && sb
+	cp -rf ~/work/dotfile/.bash_profile ~/ && sb
 	cp -rf ~/work/dotfile/.bashrc ~/ && sb
 }
+alias cpb="cpbb"
 
 # Clipbord
 # alias c="clip.exe"
