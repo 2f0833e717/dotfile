@@ -50,9 +50,10 @@ alias cob="cobb"
 # copy dotfile project to home path dotfile and reloading
 cpbb (){
 	echo "======== running ======== cpb()"
-	cp -rf ~/work/dotfile/.bash_aliases ~/ && sb
-	cp -rf ~/work/dotfile/.bash_profile ~/ && sb
-	cp -rf ~/work/dotfile/.bashrc ~/ && sb
+	cp -rf ~/work/dotfile/.bash_aliases ~/
+	cp -rf ~/work/dotfile/.bash_profile ~/
+	cp -rf ~/work/dotfile/.bashrc ~/
+	sb
 }
 alias cpb="cpbb"
 
