@@ -28,40 +28,31 @@ alias qq="exit"
 # My dotfile upload to Git
 upbb (){
 	cd ~/work/dotfile
-	cobb
+	cob
 	gpada
-	cpbb
+	cpb
 	cd -
 }
 alias upb="upbb"
 
 # copy home path dotfile to dotfile project
-cobb (){
-	echo "======== running ======== cob()"
+alias cob="
+	echoo && alias cob && echoo
 	rsync -a ~/.bash_aliases ~/work/dotfile/
 	rsync -a ~/.bash_profile ~/work/dotfile/
 	rsync -a ~/.bashrc ~/work/dotfile/
 	rsync -a ~/.gitconfig ~/work/dotfile/
 	rsync -a ~/.profile ~/work/dotfile/
 	rsync -a ~/.vim ~/work/dotfile/
-	rsync -a ~/.vimrc ~/work/dotfile/
-}
-alias cob="cobb"
+	rsync -a ~/.vimrc ~/work/dotfile/"
+
 # copy dotfile project to home path dotfile and reloading
-alias cpbb="cp -rf ~/work/dotfile/.bash_aliases ~/ cp -rf ~/work/dotfile/.bash_profile ~/ cp -rf ~/work/dotfile/.bashrc ~/ sb"
-
-cpb (){
-	echoo && alias cpbb && echoo
-	cpbb
-}
-
-cpb (){
-	echoo && alias cpbb && echoo
+alias cpb="
+	echoo && alias cpb && echoo
 	cp -rf ~/work/dotfile/.bash_aliases ~/
 	cp -rf ~/work/dotfile/.bash_profile ~/
 	cp -rf ~/work/dotfile/.bashrc ~/
-	sb
-}
+	sb"
 
 # Clipbord
 # alias c="clip.exe"
@@ -96,11 +87,9 @@ alias gs="gst"
 alias gad="git add ."
 alias ga="gad"
 alias gco="git commit -m"
-alias gcoauto="git commit -m fix:update"
-gcoa(){
-	echoo && alias gcoauto && echoo
-	gcoauto
-}
+alias gcoa="
+	echoo && alias gcoa && echoo
+	git commit -m fix:update"
 alias gpu="git push -u"
 alias gpum="git push -u origin master"
 alias gpud="git push -u origin dev"
@@ -115,23 +104,18 @@ alias grv="gh repo view"
 alias gv="grv"
 alias grvw="grv --web"
 alias gvw="grvw"
-alias gpcf="gh pr create -f"
-gpc(){
-	echoo && alias gpcf && echoo
-	gpcf
-}
-alias gpmm="gh pr merge -m"
-gpm(){
-	echoo && alias gpmm && echoo
-	gpmm
-}
+alias gpc="
+	echoo && alias gpc && echoo
+	gh pr create -f"
+alias gpm="
+	echoo && alias gpm && echoo
+	gh pr merge -m"
 alias gpv="gh pr view"
 alias gplc="gh pr list -s closed -L 16"
 alias gpvw="gh pr view -w"
 alias gpv="gpvw"
 
-gpada (){
-	echo "======== running ======== gpada()"
+alias gpada="
 	gced
 	gpl
 	gba
@@ -144,8 +128,7 @@ gpada (){
 	gpl
 	glo
 	gplc
-	grvw
-}
+	grvw"
 
 gpad (){
 	echo "======== running ======== gpad()"
