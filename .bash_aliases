@@ -2,12 +2,12 @@
 
 # Custom Bash alias settings
 alias sb="source ~/.bashrc"
-alias vib="vi ~/.bashrc"
-alias cab="cat ~/.bashrc"
+alias vib="vi ~/.bash_aliases"
+alias cab="cat ~/.bash_aliases"
 alias cb="cab"
 alias ca="cab"
 alias cc="cab"
-alias leb="less ~/.bashrc"
+alias leb="less ~/.bash_aliases"
 
 cdls ()
 {
@@ -33,9 +33,7 @@ echoo(){
 # My dotfile upload to Git
 alias upbb="
 	cd ~/work/dotfile
-	coba
-	gpada
-	cpba
+	coba && gpadaa && cpba
 	cd -"
 alias upb="upbb"
 
@@ -119,6 +117,8 @@ alias gplca="echoo && alias gplc && gplc"
 alias grvwa="echoo && alias grvw && grvw"
 alias coba="echoo && alias cob && cob"
 alias cpba="echoo && alias cpb && cpb"
+alias gpadaa="echoo && alias gpada && gpada"
+alias gpadna="echoo && alias gpadn && gpadn"
 
 alias gpada="gceda && gpla && gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
-alias gpad="gceda && gpla && gada && gcoaa && gpuda && gpca && gpma && gpla"
+alias gpadn="gceda && gpla && gada && gcoaa && gpuda && gpca && gpma && gpla"
