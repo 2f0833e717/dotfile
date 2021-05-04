@@ -1,14 +1,19 @@
 # ~/.bash_aliases
 
+# Custom vscode alias settings
+alias ca="code ."
+alias co="code ."
+alias cc="code ."
+
+# vscode not work remote wsl @ work around
+alias codereload="rm -rf ~/.vscode-server"
+
 # Custom Bash alias settings
 alias sb="source ~/.bashrc"
 alias vib="vi ~/.bash_aliases"
 alias cab="cat ~/.bash_aliases"
 alias cb="cab"
-alias cc="cab"
 alias leb="less ~/.bash_aliases"
-
-alias ca="code ."
 
 cdls ()
 {
@@ -17,7 +22,7 @@ cdls ()
 alias cd="cdls"
 alias a="cd .."
 alias cdw="cd ~/work"
-alias cdh="cd /mnt/c/Users/user"
+alias cdh="cd /mnt/c/Users/"
 
 alias ll="ls -la"
 alias l="ll"
@@ -26,7 +31,7 @@ alias hig="hi | grep"
 
 alias qq="exit"
 
-# Custom bashscript alias settings
+# Custom Bash Script alias settings
 echoo(){
 	echo "======== alias ========"
 }
@@ -67,42 +72,6 @@ alias web="explorer.exe"
 alias html="explorer.exe"
 alias view="explorer.exe"
 
-# Custom npm alias settings
-alias nr="npm run"
-
-# Custom Git alias settings
-alias gpl="git pull origin master"
-alias gb="git branch"
-alias gba="git branch -a"
-alias gce="git checkout"
-alias gced="git checkout dev"
-alias gst="git status"
-alias gs="gst"
-alias gad="git add ."
-alias ga="gad"
-alias gco="git commit -m"
-alias gcoa="git commit -m fix:update"
-alias gpu="git push -u"
-alias gpum="git push -u origin master"
-alias gpud="git push -u origin dev"
-alias glo="git log --oneline --graph -n 12"
-alias gl="glo"
-alias gdi="git diff"
-alias gd="gdi"
-
-# Custom Github cli alias settings
-alias grc="gh repo crete"
-alias grv="gh repo view"
-alias gv="grv"
-alias grvw="gh repo view --web"
-alias gvw="grvw"
-alias gpc="gh pr create -f"
-alias gpm="gh pr merge -m"
-alias gpv="gh pr view"
-alias gplc="gh pr list -s closed -L 16"
-alias gpvw="gh pr view -w"
-alias gpv="gpvw"
-
 # Custom Github api alias settings
 grvl(){
 	curl -f -s -L https://api.github.com/users/2f0833e717/repos | \
@@ -128,6 +97,42 @@ alias coba="echoo && alias cob && cob"
 alias cpba="echoo && alias cpb && cpb"
 alias gpadaa="echoo && alias gpada && gpada"
 alias gpadna="echoo && alias gpadn && gpadn"
+
+# Custom npm alias settings
+alias nr="npm run"
+
+# Custom Git alias settings
+alias gpl="git pull origin master"
+alias gb="git branch"
+alias gba="git branch -a"
+alias gce="git checkout"
+alias gced="git checkout dev"
+alias gst="git status"
+alias gs="gst"
+alias gad="git add ."
+alias ga="gad"
+alias gco="git commit -m"
+alias gcoa="git commit -m fix:update"
+alias gpu="git push -u"
+alias gpum="git push -u origin master"
+alias gpud="git push -u origin dev"
+alias glo="git log --oneline --graph -n 12"
+alias gl="glo"
+alias gdi="git diff"
+alias gd="gdi"
+
+# Custom Github cli alias settings
+alias grc="gh repo create"
+alias grv="gh repo view"
+alias gv="grv"
+alias grvw="gh repo view --web"
+alias gvw="grvw"
+alias gpc="gh pr create -f"
+alias gpm="gh pr merge -m"
+alias gpv="gh pr view"
+alias gplc="gh pr list -s closed -L 16"
+alias gpvw="gh pr view -w"
+alias gpv="gpvw"
 
 # Custom bash deploy alias settings
 alias gpada="gceda && gpla && gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
