@@ -48,14 +48,20 @@ cobb (){
 }
 alias cob="cobb"
 # copy dotfile project to home path dotfile and reloading
-cpbb (){
-	echo "======== running ======== cpb()"
+alias cpbb="cp -rf ~/work/dotfile/.bash_aliases ~/ cp -rf ~/work/dotfile/.bash_profile ~/ cp -rf ~/work/dotfile/.bashrc ~/ sb"
+
+cpb (){
+	echoo && alias cpbb && echoo
+	cpbb
+}
+
+cpb (){
+	echoo && alias cpbb && echoo
 	cp -rf ~/work/dotfile/.bash_aliases ~/
 	cp -rf ~/work/dotfile/.bash_profile ~/
 	cp -rf ~/work/dotfile/.bashrc ~/
 	sb
 }
-alias cpb="cpbb"
 
 # Clipbord
 # alias c="clip.exe"
@@ -74,6 +80,11 @@ alias view="explorer.exe"
 # Custom npm alias settings
 alias nr="npm run"
 
+# Custom bashscript alias settings
+echoo(){
+	echo "======== running ========"
+}
+
 # Custom Git alias settings
 alias gpl="git pull origin master"
 alias gb="git branch"
@@ -86,7 +97,10 @@ alias gad="git add ."
 alias ga="gad"
 alias gco="git commit -m"
 alias gcoauto="git commit -m fix:update"
-alias gcoa="gcoauto"
+gcoa(){
+	echoo && alias gcoauto && echoo
+	gcoauto
+}
 alias gpu="git push -u"
 alias gpum="git push -u origin master"
 alias gpud="git push -u origin dev"
@@ -101,8 +115,16 @@ alias grv="gh repo view"
 alias gv="grv"
 alias grvw="grv --web"
 alias gvw="grvw"
-alias gpc="gh pr create -f"
-alias gpm="gh pr merge -m"
+alias gpcf="gh pr create -f"
+gpc(){
+	echoo && alias gpcf && echoo
+	gpcf
+}
+alias gpmm="gh pr merge -m"
+gpm(){
+	echoo && alias gpmm && echoo
+	gpmm
+}
 alias gpv="gh pr view"
 alias gplc="gh pr list -s closed -L 16"
 alias gpvw="gh pr view -w"
