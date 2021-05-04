@@ -120,27 +120,5 @@ alias grvwa="echoo && alias grvw && grvw"
 alias coba="echoo && alias cob && cob"
 alias cpba="echoo && alias cpb && cpb"
 
-alias gpada="
-	gceda
-	gpla
-	gbaa
-	gsta
-	gada
-	gcoaa
-	gpuda
-	gpca
-	gpma
-	gpla
-	gloa
-	gplca
-	grvwa"
-
-alias gpad="
-	gceda
-	gpla
-	gada
-	gcoaa
-	gpuda
-	gpca
-	gpma
-	gpla"
+alias gpada="gceda && gpla && gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
+alias gpad="gceda && gpla && gada && gcoaa && gpuda && gpca && gpma && gpla"
