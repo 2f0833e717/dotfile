@@ -78,7 +78,7 @@ alias nr="npm run"
 # Custom Git alias settings
 alias gpl="git pull origin master"
 alias gb="git branch"
-alias gba="gb -a"
+alias gba="git branch -a"
 alias gce="git checkout"
 alias gced="git checkout dev"
 alias gst="git status"
@@ -86,9 +86,7 @@ alias gs="gst"
 alias gad="git add ."
 alias ga="gad"
 alias gco="git commit -m"
-alias gcoa="
-	echoo && alias gcoa && echoo
-	git commit -m fix:update"
+alias gcoa="git commit -m fix:update"
 alias gpu="git push -u"
 alias gpum="git push -u origin master"
 alias gpud="git push -u origin dev"
@@ -101,40 +99,73 @@ alias gd="gdi"
 alias grc="gh repo crete"
 alias grv="gh repo view"
 alias gv="grv"
-alias grvw="grv --web"
+alias grvw="gh repo view --web"
 alias gvw="grvw"
-alias gpc="
-	echoo && alias gpc && echoo
-	gh pr create -f"
-alias gpm="
-	echoo && alias gpm && echoo
-	gh pr merge -m"
+alias gpc="gh pr create -f"
+alias gpm="gh pr merge -m"
 alias gpv="gh pr view"
 alias gplc="gh pr list -s closed -L 16"
 alias gpvw="gh pr view -w"
 alias gpv="gpvw"
 
+alias gceda="
+	echoo && alias gced && echoo
+	git checkout dev"
+alias gpla="
+	echoo && alias gpl && echoo
+	git pull origin master"
+alias gbaa="
+	echoo && alias gba && echoo
+	git branch -a"
+alias gsta="
+	echoo && alias gst && echoo
+	git status"
+alias gada="
+	echoo && alias gad && echoo
+	git add ."
+alias gcoaa="
+	echoo && alias gcoa && echoo
+	git commit -m fix:update"
+alias gpuda="
+	echoo && alias gpud && echoo
+	git push -u origin dev"
+alias gpca="
+	echoo && alias gpc && echoo
+	gh pr create -f"
+alias gpma="
+	echoo && alias gpm && echoo
+	gh pr merge -m"
+alias gloa="
+	echoo && alias gloa && echoo
+	git log --oneline --graph -n 12"
+alias gplca="
+	echoo && alias gplc && echoo
+	gh pr list -s closed -L 16"
+alias grvwa="
+	echoo && alias grvw && echoo
+	gh repo view --web"
+
 alias gpada="
-	gced
-	gpl
-	gba
-	gst
-	gad
-	gcoa
-	gpud
-	gpc
-	gpm
-	gpl
-	glo
+	gceda
+	gpla
+	gbaa
+	gsta
+	gada
+	gcoaa
+	gpuda
+	gpca
+	gpma
+	gpla
+	gloa
 	gplc
-	grvw"
+	grvwa"
 
 alias gpad="
-	gced
-	gpl
-	gad
-	gcoa
-	gpud
-	gpc
-	gpm
-	gpl"
+	gceda
+	gpla
+	gada
+	gcoaa
+	gpuda
+	gpca
+	gpma
+	gpla"
