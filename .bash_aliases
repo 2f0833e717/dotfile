@@ -51,7 +51,7 @@ alias cob="
 
 # copy dotfile project to home path dotfile and reloading
 alias cpb="
-	cp ./ ~/
+	cp -rf ./ ~/
 	sb"
 
 # Clipbord
