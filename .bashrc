@@ -1,4 +1,4 @@
-# ~/.bashrc 
+# ~/.bashrc
 
 #### wsl default .bashrc settings Start
 # ~/.bashrc: executed by bash(1) for non-login shells.
@@ -124,5 +124,12 @@ fi
 
 
 #wsl login auto run script
-#cdw
+cdw
 
+# nvm loading
+if [ -s ~/.nvm/nvm.sh ]; then
+	source ~/.nvm/nvm.sh
+fi
+
+# brew loading
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
