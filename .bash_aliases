@@ -108,9 +108,11 @@ alias gpadna="echoo && alias gpadn && gpadn"
 alias nr="npm run"
 
 # Custom first commit Git alias settings
-# step1. grc
-# step2. gfc
-alias gfc="gad && gcoa && gpum && gcebd && gpud"
+# step1. cd {projet-folder}
+# step2. grc # enter x 3 # Yes
+# ? This will add an "origin" git remote to your local repository. Continue? Yes
+# step4. gfc
+alias gfc="gad && gco "initial" && gpum && gcebd && gpud"
 
 # Custom Git alias settings
 alias gpl="git pull origin master"
@@ -126,7 +128,7 @@ alias ga="gad"
 alias gco="git commit -m"
 alias gcoa="git commit -m fix:update"
 alias gpu="git push -u"
-alias gpum="git push -u origin main"
+alias gpum="git push -u origin master"
 alias gpud="git push -u origin dev"
 alias glo="git log --oneline --graph -n 12"
 alias gl="glo"
