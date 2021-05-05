@@ -101,13 +101,18 @@ alias gpadna="echoo && alias gpadn && gpadn"
 # Custom npm alias settings
 alias nr="npm run"
 
+# Custom first commit Git alias settings
+# step1. grc
+# step2. gfc
+alias gfc="gad && gcoa && gpum && gcebd && gpud"
+
 # Custom Git alias settings
 alias gpl="git pull origin master"
 alias gb="git branch"
 alias gba="git branch -a"
 alias gce="git checkout"
 alias gced="git checkout dev"
-alias gcebd="git checkout -b dev"
+alias gced="git checkout -b dev"
 alias gst="git status"
 alias gs="gst"
 alias gad="git add ."
@@ -115,7 +120,7 @@ alias ga="gad"
 alias gco="git commit -m"
 alias gcoa="git commit -m fix:update"
 alias gpu="git push -u"
-alias gpum="git push -u origin master"
+alias gpum="git push -u origin main"
 alias gpud="git push -u origin dev"
 alias glo="git log --oneline --graph -n 12"
 alias gl="glo"
