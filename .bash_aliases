@@ -106,10 +106,12 @@ alias gpadna="echoo && alias gpadn && gpadn"
 
 # Custom npm alias settings
 alias nr="npm run"
+alias pa="cat package.json"
 
 # Custom first commit Git alias settings
-# step1. cd {projet-folder}
-# step2. grc # enter x 3 # Yes
+# step1. git clone {projet-repo-url}
+# step2. cd {projet-folder}
+# step3. grc # enter x 3 # Yes
 # ? This will add an "origin" git remote to your local repository. Continue? Yes
 # step4. gfc
 alias gfc="gad && gco "initial" && gpum && gcebd && gpud"
