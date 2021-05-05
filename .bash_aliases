@@ -117,6 +117,7 @@ alias pa="cat package.json"
 alias gfc="gad && gco "initial" && gpum && gcebd && gpud"
 
 # Custom Git alias settings
+alias gcl="git clone"
 alias gpl="git pull origin master"
 alias gb="git branch"
 alias gba="git branch -a"
