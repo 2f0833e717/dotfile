@@ -55,7 +55,13 @@ alias cob="
 
 # copy dotfile project to home path dotfile and reloading
 alias cpb="
-	cp -rf ./ ~/
+	cp -rf ~/work/dotfile/.bash_aliases ~/
+	cp -rf ~/work/dotfile/.bash_profile ~/
+	cp -rf ~/work/dotfile/.bashrc ~/
+	cp -rf ~/work/dotfile/.gitconfig ~/
+	cp -rf ~/work/dotfile/.profile ~/
+	cp -rf ~/work/dotfile/.vim ~/
+	cp -rf ~/work/dotfile/.vimrc ~/
 	sb"
 
 # Clipbord
@@ -112,7 +118,7 @@ alias gb="git branch"
 alias gba="git branch -a"
 alias gce="git checkout"
 alias gced="git checkout dev"
-alias gced="git checkout -b dev"
+alias gcebd="git checkout -b dev"
 alias gst="git status"
 alias gs="gst"
 alias gad="git add ."
