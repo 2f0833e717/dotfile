@@ -6,7 +6,7 @@ alias co="code ."
 alias cc="code ."
 
 # vscode not work remote wsl @ work around
-alias codereload="rm -rf ~/.vscode-server"
+alias reloadcode="rm -rf ~/.vscode-server"
 
 # Custom Bash alias settings
 alias sb="source ~/.bashrc"
