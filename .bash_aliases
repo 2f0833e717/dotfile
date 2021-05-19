@@ -33,6 +33,8 @@ alias l="ll"
 alias hi="history"
 alias hig="hi | grep"
 
+alias tre="pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'"
+
 alias qq="exit"
 
 # Custom Bash Script alias settings
