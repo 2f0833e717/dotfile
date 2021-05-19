@@ -6,7 +6,10 @@ alias co="code ."
 alias cc="code ."
 
 # vscode not work remote wsl @ work around
-alias codereload="rm -rf ~/.vscode-server"
+alias reloadcode="rm -rf ~/.vscode-server"
+
+# Custom doctoc alias
+alias dtc="doctoc ."
 
 # Custom Bash alias settings
 alias sb="source ~/.bashrc"
@@ -130,6 +133,8 @@ alias gad="git add ."
 alias ga="gad"
 alias gco="git commit -m"
 alias gcoa="git commit -m 'fix: update'"
+alias gcom="git commit -m 'stash: tmp-commit'"
+alias gmr="git merge"
 alias gpu="git push -u"
 alias gpum="git push -u origin master"
 alias gpud="git push -u origin dev"
@@ -154,3 +159,7 @@ alias gpv="gpvw"
 # Custom bash deploy alias settings
 alias gpada="gceda && gpla && gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
 alias gpadn="gceda && gpla && gada && gcoaa && gpuda && gpca && gpma && gpla"
+
+alias gpadf="gada && gcoaa && gpada"
+
+
