@@ -7,9 +7,12 @@ alias cc="code ."
 
 # vscode not work remote wsl @ work around
 alias reloadcode="rm -rf ~/.vscode-server"
+<<<<<<< HEAD
 
 # Custom doctoc alias
 alias dtc="doctoc ."
+=======
+>>>>>>> d7bf4adf630285171ec033593b5582211a3a73b6
 
 # Custom Bash alias settings
 alias sb="source ~/.bashrc"
