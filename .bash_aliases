@@ -7,6 +7,7 @@ alias cc="code ."
 
 # vscode not work remote wsl @ work around
 alias reloadcode="rm -rf ~/.vscode-server"
+alias rc="reloadcode"
 
 # Custom doctoc alias
 alias dtc="doctoc ."
