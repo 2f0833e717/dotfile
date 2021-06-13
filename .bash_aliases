@@ -30,6 +30,7 @@ alias cdw="cd ~/work"
 alias cdh="cd /mnt/c/Users/"
 
 alias ll="ls -la"
+alias lll="ll"
 alias l="ll"
 alias hi="history"
 alias hig="hi | grep"
