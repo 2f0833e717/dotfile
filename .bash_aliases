@@ -94,6 +94,7 @@ grvl(){
 }
 
 # Custom bash deploy echo alias settings
+alias doca="echoo && alias doc && doc"
 alias gceda="echoo && alias gced && gced"
 alias gpla="echoo && alias gpl && gpl"
 alias gbaa="echoo && alias gba && gba"
@@ -114,6 +115,9 @@ alias gpadna="echoo && alias gpadn && gpadn"
 # Custom npm alias settings
 alias nr="npm run"
 alias pa="cat package.json"
+
+# Custom doctoc alias settings
+alias doc="doctoc ."
 
 # Custom first commit Git alias settings
 # step1. git clone {projet-repo-url}
@@ -159,5 +163,9 @@ alias gpvw="gh pr view -w"
 alias gpv="gpvw"
 
 # Custom bash deploy alias settings
-alias gpada="gceda && gpla && gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
-alias gpadn="gceda && gpla && gada && gcoaa && gpuda && gpca && gpma && gpla"
+alias gpada="
+	doca &&
+	gceda && gpla && gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
+alias gpadn="
+	doca &&
+	gceda && gpla && gada && gcoaa && gpuda && gpca && gpma && gpla"
