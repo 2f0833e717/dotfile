@@ -12,37 +12,53 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [How does it work?(bash_alias)](#how-does-it-workbash_alias)
-  - [how to devops(dev ~ ci/cd)](#how-to-devopsdev--cicd)
-    - [step1. clone to project](#step1-clone-to-project)
-    - [step2. edit & update](#step2-edit--update)
-    - [step3. push to git](#step3-push-to-git)
-  - [sample script](#sample-script)
-    - [My dotfile upload to Git](#my-dotfile-upload-to-git)
-    - [copy home path dotfile -> dotfile project(work)](#copy-home-path-dotfile---dotfile-projectwork)
-    - [copy dotfile project(work) -> home path dotfile & reloading](#copy-dotfile-projectwork---home-path-dotfile--reloading)
-    - [Custom bash deploy echo alias settings](#custom-bash-deploy-echo-alias-settings)
-    - [Custom Git alias settings](#custom-git-alias-settings)
-    - [Custom Github cli alias settings](#custom-github-cli-alias-settings)
-    - [Custom bash deploy alias settings](#custom-bash-deploy-alias-settings)
+  - [1. custom bash alias(](#1-custom-bash-alias)
+  - [2. git auto deployment comannds](#2-git-auto-deployment-comannds)
+- [how to devops(dev ~ ci/cd)](#how-to-devopsdev--cicd)
+  - [step1. clone to project](#step1-clone-to-project)
+  - [step2. edit & update](#step2-edit--update)
+  - [step3. push to git](#step3-push-to-git)
+- [sample script](#sample-script)
+  - [My dotfile upload to Git](#my-dotfile-upload-to-git)
+  - [copy home path dotfile -> dotfile project(work)](#copy-home-path-dotfile---dotfile-projectwork)
+  - [copy dotfile project(work) -> home path dotfile & reloading](#copy-dotfile-projectwork---home-path-dotfile--reloading)
+  - [Custom bash deploy echo alias settings](#custom-bash-deploy-echo-alias-settings)
+  - [Custom Git alias settings](#custom-git-alias-settings)
+  - [Custom Github cli alias settings](#custom-github-cli-alias-settings)
+  - [Custom bash deploy alias settings](#custom-bash-deploy-alias-settings)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # How does it work?(bash_alias)
 this is linux(ubuntu-18.04/20.04)'s dotfile
 
-1. custom bash alias(
-    * bash
-    * vi
-    * vscode
-    * windows-command-exe
-    * git-command
-    * github-comannd
-    * ...)
-2. git auto deployment comannds 
+## 1. custom bash alias(
+* bash
+* vi
+* vscode
+* windows-command-exe
+* git-command
+* github-comannd
+* ...)
 
-## how to devops(dev ~ ci/cd)
+## 2. git auto deployment comannds
+* git checkout
+* git pull
+* git branch
+* git status
+* git add
+* git commit
+* git push
+* gh pr create
+* gh pr merge
+* git pull
+* git log
+* gh pr list
+* gh repo view
 
-### step1. clone to project
+# how to devops(dev ~ ci/cd)
+
+## step1. clone to project
 ```bash
 mkdir ~/work/
 cd ~/work/
@@ -50,7 +66,7 @@ git clone https://github.com/2f0833e717/dotfile
 cd dotfile
 ```
 
-### step2. edit & update
+## step2. edit & update
 ```bash
 # edit .dotfiles
 vi ~/work/.bash_alias
@@ -63,16 +79,16 @@ vi ~/.bash_alias
 sb
 ```
 
-### step3. push to git
+## step3. push to git
 ```bash
 upb
 ```
 
 
-## sample script
+# sample script
 !no maintenance. new files is get clone project!
 
-### My dotfile upload to Git
+## My dotfile upload to Git
 ```bash
 alias upbb="
 	cd ~/work/dotfile
@@ -81,7 +97,7 @@ alias upbb="
 alias upb="upbb"
 ```
 
-### copy home path dotfile -> dotfile project(work)
+## copy home path dotfile -> dotfile project(work)
 ```bash
 alias cob="
 	cp -rf ~/.bash_aliases ~/work/dotfile/
@@ -93,7 +109,7 @@ alias cob="
 	cp -rf ~/.vimrc ~/work/dotfile/"
 ```
 
-### copy dotfile project(work) -> home path dotfile & reloading
+## copy dotfile project(work) -> home path dotfile & reloading
 ```bash
 alias cpb="
 	cp -rf ~/work/dotfile/.bash_aliases ~/
@@ -114,7 +130,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 ```
 
-### Custom bash deploy echo alias settings
+## Custom bash deploy echo alias settings
 ```bash
 echoo(){
 	echo "======== alias ========"
@@ -137,7 +153,7 @@ alias gpadaa="echoo && alias gpada && gpada"
 alias gpadna="echoo && alias gpadn && gpadn"
 ```
 
-### Custom Git alias settings
+## Custom Git alias settings
 ```bash
 alias gcl="git clone"
 alias gpl="git pull origin master"
@@ -161,7 +177,7 @@ alias gdi="git diff"
 alias gd="gdi"
 ```
 
-### Custom Github cli alias settings
+## Custom Github cli alias settings
 ```bash
 alias grc="gh repo create"
 alias grv="gh repo view"
@@ -176,7 +192,7 @@ alias gpvw="gh pr view -w"
 alias gpv="gpvw"
 ```
 
-### Custom bash deploy alias settings
+## Custom bash deploy alias settings
 ```bash
 alias gpada="gceda && gpla && gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
 alias gpadn="gceda && gpla && gada && gcoaa && gpuda && gpca && gpma && gpla"
