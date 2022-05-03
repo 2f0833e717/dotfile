@@ -11,7 +11,7 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [dotfile](#dotfile)
+- [How does it work?(bash_alias)](#how-does-it-workbash_alias)
   - [how to devops(dev ~ ci/cd)](#how-to-devopsdev--cicd)
     - [step1. clone to project](#step1-clone-to-project)
     - [step2. edit & update](#step2-edit--update)
@@ -27,9 +27,18 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# dotfile
+# How does it work?(bash_alias)
 this is linux(ubuntu-18.04/20.04)'s dotfile
 
+1. custom bash alias(
+    * bash
+    * vi
+    * vscode
+    * windows-command-exe
+    * git-command
+    * github-comannd
+    * ...)
+2. git auto deployment comannds 
 
 ## how to devops(dev ~ ci/cd)
 
