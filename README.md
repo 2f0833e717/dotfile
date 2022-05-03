@@ -38,7 +38,7 @@ this is linux(ubuntu-18.04/20.04)'s dotfile
 * vscode
 * windows-command-exe
 * git-command
-* github-comannd
+* github-command
 * ...)
 
 ## 2. git auto deployment comannds
