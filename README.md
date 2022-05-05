@@ -2,11 +2,11 @@
 
 <!-- # Badges -->
 
-[![Github issues](https://img.shields.io/github/issues/2f0833e717/manual)](https://github.com/2f0833e717/manual/issues)
-[![Github forks](https://img.shields.io/github/forks/2f0833e717/manual)](https://github.com/2f0833e717/manual/network/members)
-[![Github stars](https://img.shields.io/github/stars/2f0833e717/manual)](https://github.com/2f0833e717/manual/stargazers)
-[![Github top language](https://img.shields.io/github/languages/top/2f0833e717/manual)](https://github.com/2f0833e717/manual/)
-[![Github license](https://img.shields.io/github/license/2f0833e717/manual)](https://github.com/2f0833e717/manual/)
+[![Github issues](https://img.shields.io/github/issues/2f0833e717/dotfile)](https://github.com/2f0833e717/dotfile/issues)
+[![Github forks](https://img.shields.io/github/forks/2f0833e717/dotfile)](https://github.com/2f0833e717/dotfile/network/members)
+[![Github stars](https://img.shields.io/github/stars/2f0833e717/dotfile)](https://github.com/2f0833e717/dotfile/stargazers)
+[![Github top language](https://img.shields.io/github/languages/top/2f0833e717/dotfile)](https://github.com/2f0833e717/dotfile/)
+[![Github license](https://img.shields.io/github/license/2f0833e717/dotfile)](https://github.com/2f0833e717/dotfile/)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
