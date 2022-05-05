@@ -4,3 +4,5 @@
 [user]
 	name = 2f0833e717
 	email = skinoshita202001082135@gmail.com
+[init]
+	defaultBranch = main
