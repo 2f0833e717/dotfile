@@ -118,7 +118,6 @@ alias pa="cat package.json"
 
 # Custom doctoc alias settings
 alias doc="doctoc . && docdel"
-#alias docdel="sed -i -e 's/\*\*Table of Contents\*\*  \*generated with \[DocToc\]\(https\:\/\/github\.com\/thlorenz\/doctoc\)\*//g' ./README.md"
 alias docdel="sed -i -e 's/\*\*Table of Contents\*\*  \*generated with \[DocToc\](https\:\/\/github\.com\/thlorenz\/doctoc)\*//g' ./README.md"
 
 # Custom first commit Git alias settings
