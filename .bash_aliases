@@ -126,8 +126,8 @@ alias nr="npm run"
 alias pa="cat package.json"
 
 # Custom doctoc alias settings
-alias doc="doctoc . && docdel"
 alias docdel="sed -i -e 's/\*\*Table of Contents\*\*  \*generated with \[DocToc\](https\:\/\/github\.com\/thlorenz\/doctoc)\*//g' ./README.md"
+alias doc="find . -type f -name \"*.md\" -not -path \"*/node_modules/*\" -not -path \"*/.git/*\" -exec sh -c 'doctoc {} && sed -i -e \"s/\*\*Table of Contents\*\*  \*generated with \[DocToc\](https\:\/\/github\.com\/thlorenz\/doctoc)\*//g\" -e \"/^## 目次/,/^<!-- START doctoc/{ /^<!-- START doctoc/!d; }\" -e \"s/<!-- START doctoc/## 目次\n\n<!-- START doctoc/g\" {}' \;"
 
 # Custom first commit Git alias settings
 # step1. git clone {projet-repo-url}
@@ -178,4 +178,3 @@ alias gpada="
 	doca || gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
 alias gpadn="
 	doca || gada && gcoaa && gpuda && gpca && gpma && gpla"
- 

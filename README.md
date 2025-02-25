@@ -8,6 +8,8 @@
 [![Github top language](https://img.shields.io/github/languages/top/2f0833e717/dotfile)](https://github.com/2f0833e717/dotfile/)
 [![Github license](https://img.shields.io/github/license/2f0833e717/dotfile)](https://github.com/2f0833e717/dotfile/)
 
+## 目次
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
