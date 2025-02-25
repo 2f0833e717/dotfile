@@ -116,7 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export GOOGLE_API_KEY=AIzaSyADPrFOKKOJoltxGtupqVnm0YTBJfp_SH0
 export PATH="/home/ubuntu/.local/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
