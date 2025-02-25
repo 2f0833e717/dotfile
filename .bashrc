@@ -130,3 +130,4 @@ cd() {
     builtin cd "$@" && ls -la
 }
 
+alias docdel="sed -i -e 's/\*\*Table of Contents\*\*  \*generated with \[DocToc\](https\:\/\/github\.com\/thlorenz\/doctoc)\*//g' ./README.md"
