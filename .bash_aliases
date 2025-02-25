@@ -10,6 +10,9 @@ alias ca="vs"
 alias co="vs"
 alias cc="vs"
 
+# Custom cursor alias settings
+alias cursor="cursor ."
+
 # vscode not work remote wsl @ work around
 alias reloadvs="rm -rf ~/.vscode-server"
 alias reloadcode="reloadvs"
@@ -30,6 +33,7 @@ alias cd="cdls"
 alias a="cd .."
 alias cdw="cd ~/work"
 alias cdh="cd /mnt/c/Users/"
+alias cdp="cd ~/Project"
 
 alias ll="ls -la"
 alias l="ll"
@@ -170,3 +174,6 @@ alias gpada="
 alias gpadn="
 	doca &&
 	gceda && gpla && gada && gcoaa && gpuda && gpca && gpma && gpla"
+
+# 
+
