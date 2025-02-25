@@ -1,6 +1,3 @@
-# ~/.bashrc
-
-#### wsl default .bashrc settings Start
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -50,12 +47,12 @@ esac
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-        # We have color support; assume it's compliant with Ecma-48
-        # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-        # a case would tend to support setf rather than setaf.)
-        color_prompt=yes
+	# We have color support; assume it's compliant with Ecma-48
+	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+	# a case would tend to support setf rather than setaf.)
+	color_prompt=yes
     else
-        color_prompt=
+	color_prompt=
     fi
 fi
 
@@ -118,17 +115,19 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-#### wsl default .bashrc settings End
 
-# Custom Bash color setting
+export GOOGLE_API_KEY=AIzaSyADPrFOKKOJoltxGtupqVnm0YTBJfp_SH0
+export PATH="/home/ubuntu/.local/bin:$PATH"
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+. "$HOME/.cargo/env"
 
-#wsl login auto run script
+source /home/ubuntu/.config/broot/launcher/bash/br
 
-# nvm loading
-if [ -s ~/.nvm/nvm.sh ]; then
-	source ~/.nvm/nvm.sh
-fi
+# cdコマンド実行後に自動でls -laを実行する関数
+cd() {
+    builtin cd "$@" && ls -la
+}
 
-# brew loading
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
