@@ -52,7 +52,7 @@ alias upbb="
 	cd ~/work/dotfile
 	gpadf ||
 	gceda && gplda ||
-	coba && doca || gpadaa && cpba
+	coba && gpadaa && cpba
 	cd -"
 alias upb="upbb"
 
@@ -174,8 +174,7 @@ alias gpv="gpvw"
 
 # Custom bash deploy alias settings
 alias gpada="
-	gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
+	doca || gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
 alias gpadn="
-	gceda && gplda && gada && gcoaa && gpuda && gpca && gpma && gpla"
+	doca || gada && gcoaa && gpuda && gpca && gpma && gpla"
  
-#
