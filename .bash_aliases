@@ -50,7 +50,9 @@ echoo(){
 # My dotfile upload to Git
 alias upbb="
 	cd ~/work/dotfile
-	coba && gpadaa && cpba
+	gpadf ||
+	gceda && gplda ||
+	coba && doca || gpadaa && cpba
 	cd -"
 alias upb="upbb"
 
@@ -171,12 +173,9 @@ alias gpvw="gh pr view -w"
 alias gpv="gpvw"
 
 # Custom bash deploy alias settings
-alias gpadf="gcebda"
 alias gpada="
-	doca ||
-	gceda && gplda && gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
+	gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
 alias gpadn="
-	doca ||
 	gceda && gplda && gada && gcoaa && gpuda && gpca && gpma && gpla"
  
 
