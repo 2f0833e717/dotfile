@@ -100,7 +100,9 @@ grvl(){
 # Custom bash deploy echo alias settings
 alias doca="echoo && alias doc && doc"
 alias gceda="echoo && alias gced && gced"
+alias gcebda="echoo && alias gcebd && gcebd"
 alias gpla="echoo && alias gpl && gpl"
+alias gplda="echoo && alias gpld && gpld"
 alias gbaa="echoo && alias gba && gba"
 alias gsta="echoo && alias gst && gst"
 alias gada="echoo && alias gad && gad"
@@ -135,6 +137,7 @@ alias gfc="gad && gco "initial" && gpum && gcebd && gpud"
 # Custom Git alias settings
 alias gcl="git clone"
 alias gpl="git pull origin main"
+alias gpld="git pull origin dev"
 alias gb="git branch"
 alias gba="git branch -a"
 alias gce="git checkout"
@@ -168,12 +171,13 @@ alias gpvw="gh pr view -w"
 alias gpv="gpvw"
 
 # Custom bash deploy alias settings
+alias gpadf="gcebda"
 alias gpada="
-	doca &&
-	gceda && gpla && gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
+	doca ||
+	gceda && gplda && gbaa && gsta && gada && gcoaa && gpuda && gpca && gpma && gpla && gloa && gplca && grvwa"
 alias gpadn="
-	doca &&
-	gceda && gpla && gada && gcoaa && gpuda && gpca && gpma && gpla"
+	doca ||
+	gceda && gplda && gada && gcoaa && gpuda && gpca && gpma && gpla"
 
 # 
 
