@@ -178,6 +178,5 @@ alias gpada="
 alias gpadn="
 	doca ||
 	gceda && gplda && gada && gcoaa && gpuda && gpca && gpma && gpla"
-
-# 
+ 
 
