@@ -1,6 +1,6 @@
-[url "github:"]
-	InsteadOf = https://github.com/
-	InsteadOf = git@github.com:
 [user]
 	name = 2f0833e717
 	email = skinoshita202001082135@gmail.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
