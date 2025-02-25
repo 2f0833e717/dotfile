@@ -12,6 +12,7 @@ alias cc="vs"
 
 # Custom cursor alias settings
 alias cursor="cursor ."
+alias cur="cursor"
 
 # vscode not work remote wsl @ work around
 alias reloadvs="rm -rf ~/.vscode-server"
