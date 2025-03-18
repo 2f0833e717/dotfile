@@ -34,7 +34,7 @@ alias cd="cdls"
 alias a="cd .."
 alias cdw="cd ~/work"
 alias cdh="cd /mnt/c/Users/"
-alias cdp="cd ~/Project"
+alias cdp="cd /mnt/d/Project/"
 
 alias ll="ls -la"
 alias l="ll"
